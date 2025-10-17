@@ -14,13 +14,13 @@ const bikeList =[
     //Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
     {
         name: 'bikeOne',
-        kgWeight: 7,
+        kgWeight: 3,
 
     },
 
     {
         name: 'bikeTwo',
-        kgWeight: 8,
+        kgWeight: 5,
 
     },
     {
@@ -74,6 +74,21 @@ for (let i = 0; i < bikeList.length; i++) {
 }
 
 console.log(lighterBike)
+let lighterBikeName
+
+for (let i = 0; i < bikeList.length; i++) {
+    const object = bikeList[i];
+    console.log(object)
+    
+    if(object.kgWeight == lighterBike){
+        document.getElementById('div').innerHTML = `${object.name}`
+        break
+        
+    }
+    
+    
+}
+
 /*for (let i = 0; i < bikeWheights.length; i++) {
    if(bikeWheights[i]< lighterBike){
     lighterBike = bikeWheights[i]
