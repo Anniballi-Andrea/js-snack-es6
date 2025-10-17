@@ -32,10 +32,34 @@ const bikeList =[
 
 ]
 //Stampare a schermo la bici con peso minore.
-console.log(bikeList)
-console.log(bikeList[0])
-console.log(bikeList[1])
-console.log(bikeList[2])
+/*const bike ={
+    name: 'bikeOne',
+    kgWeight: 7,
+}
+
+console.log(bike.name)
+console.log(bike.kgWeight)*/
+
+//devo prendere i valori del peso per fare una comparazione, per farlo:
+
+let lighter
+
+//individuo il singolo oggetto che corrisponde a un valore specifico dell' array
+
+for (let i = 0; i < bikeList.length; i++) {
+    const bike = bikeList[i];
+    //console.log(bike.kgWeight)
+    
+    
+    
+}
+
+
+
+
+
+
+
 
 
 
