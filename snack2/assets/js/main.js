@@ -21,13 +21,32 @@ const teams =[
         point: 0,
         fouls: 0,
     },
-]
+];
+//dichiaro il nuovo array
+const newArray=[]
+
+
 
 //mi prendo l'array e lo ciclo per poter prendere i singoli object
 for (let i = 0; i < teams.length; i++) {
     const team = teams[i];
+    //genero i numeri random
     team.point = Math.floor(Math.random() * 100);
     team.fouls = Math.floor(Math.random() * 100);
     
 }
 console.log(teams)
+//devo creare un nuovo object da inserire nel nuovo array
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+    const newObject={}
+    //prendo i le singole key per confrontarle per capire se devono essere inserite nel nuovo array
+    for (const key in teams) {
+    console.log(teams[key])
+
+
+
+}
+
+
+}
